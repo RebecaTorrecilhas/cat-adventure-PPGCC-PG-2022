@@ -1,0 +1,407 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://gatinho.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Mapa/tilegeral.tres" type="TileSet" id=2]
+[ext_resource path="res://doguinho.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Mapa/tilegeraldetalhes.tres" type="TileSet" id=4]
+[ext_resource path="res://Mapa/tilegeraldecoracores.tres" type="TileSet" id=5]
+[ext_resource path="res://Colisão mapa.tscn" type="PackedScene" id=6]
+[ext_resource path="res://moeda.tscn" type="PackedScene" id=7]
+
+[node name="teste nivel" type="Node2D"]
+
+[node name="Colisão" parent="." instance=ExtResource( 6 )]
+position = Vector2( 0, 96 )
+
+[node name="Colisão2" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 32, 0 )
+
+[node name="Colisão3" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 63, 0 )
+
+[node name="Colisão4" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 84, 0 )
+
+[node name="Colisão5" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 84, -31 )
+
+[node name="Colisão6" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 84, -64 )
+
+[node name="Colisão7" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 84, -96 )
+
+[node name="Colisão8" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 114, -125 )
+
+[node name="Colisão9" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 145, -125 )
+
+[node name="Colisão10" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 175, -125 )
+
+[node name="Colisão11" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 203, -125 )
+
+[node name="Colisão12" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 235, -125 )
+
+[node name="Colisão13" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 266, -125 )
+
+[node name="Colisão14" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 294, -125 )
+
+[node name="Colisão15" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 325, -125 )
+
+[node name="Colisão16" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 356, -125 )
+
+[node name="Colisão17" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 386, -125 )
+
+[node name="Colisão18" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 417, -125 )
+
+[node name="Colisão19" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 448, -125 )
+
+[node name="Colisão20" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, -125 )
+
+[node name="Colisão21" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, -96 )
+
+[node name="Colisão22" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, -64 )
+
+[node name="Colisão23" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, -31 )
+
+[node name="Colisão24" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 0 )
+
+[node name="Colisão25" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 32 )
+
+[node name="Colisão26" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 64 )
+
+[node name="Colisão27" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 95 )
+
+[node name="Colisão28" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 127 )
+
+[node name="Colisão29" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 158 )
+
+[node name="Colisão30" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 188 )
+
+[node name="Colisão31" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 219 )
+
+[node name="Colisão32" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 250 )
+
+[node name="Colisão33" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 281 )
+
+[node name="Colisão34" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 311 )
+
+[node name="Colisão35" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 342 )
+
+[node name="Colisão36" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 479, 374 )
+
+[node name="Colisão37" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 448, 383 )
+
+[node name="Colisão38" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 417, 383 )
+
+[node name="Colisão39" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 386, 383 )
+
+[node name="Colisão40" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 356, 383 )
+
+[node name="Colisão41" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 325, 383 )
+
+[node name="Colisão42" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 294, 383 )
+
+[node name="Colisão43" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 262, 383 )
+
+[node name="Colisão44" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 235, 383 )
+
+[node name="Colisão45" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 203, 383 )
+
+[node name="Colisão46" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 171, 383 )
+
+[node name="Colisão47" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 140, 383 )
+
+[node name="Colisão48" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 108, 383 )
+
+[node name="Colisão49" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 79, 383 )
+
+[node name="Colisão50" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 48, 383 )
+
+[node name="Colisão51" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 16, 383 )
+
+[node name="Colisão52" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -14, 383 )
+
+[node name="Colisão53" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 352 )
+
+[node name="Colisão54" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 320 )
+
+[node name="Colisão55" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 288 )
+
+[node name="Colisão56" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 258 )
+
+[node name="Colisão57" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 227 )
+
+[node name="Colisão58" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 197 )
+
+[node name="Colisão59" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 166 )
+
+[node name="Colisão60" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 135 )
+
+[node name="Colisão61" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 103 )
+
+[node name="Colisão62" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 72 )
+
+[node name="Colisão63" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 41 )
+
+[node name="Colisão64" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( -31, 10 )
+
+[node name="Colisão65" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 248, -41 )
+
+[node name="Colisão67" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 248, -10 )
+
+[node name="Colisão68" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 248, 16 )
+
+[node name="Colisão69" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 248, 48 )
+
+[node name="Colisão70" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 248, 64 )
+
+[node name="Colisão71" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 248, 135 )
+
+[node name="Colisão72" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 248, 143 )
+
+[node name="Colisão73" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 248, 170 )
+
+[node name="Colisão74" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 219, 170 )
+
+[node name="Colisão75" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 203, 170 )
+
+[node name="Colisão76" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 187, 186 )
+
+[node name="Colisão77" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 203, 197 )
+
+[node name="Colisão78" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 203, 227 )
+
+[node name="Colisão79" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 203, 258 )
+
+[node name="Colisão95" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 215, 278 )
+
+[node name="Colisão96" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 235, 266 )
+
+[node name="Colisão97" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 244, 278 )
+
+[node name="Colisão98" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 266, 266 )
+
+[node name="Colisão99" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 269, 278 )
+
+[node name="Colisão100" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 298, 278 )
+
+[node name="Colisão101" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 310, 278 )
+
+[node name="Colisão102" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 298, 266 )
+
+[node name="Colisão103" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 330, 263 )
+
+[node name="Colisão104" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 346, 263 )
+
+[node name="Colisão105" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 346, 235 )
+
+[node name="Colisão106" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 346, 213 )
+
+[node name="Colisão107" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 346, 186 )
+
+[node name="Colisão108" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 362, 213 )
+
+[node name="Colisão109" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 378, 229 )
+
+[node name="Colisão110" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 378, 250 )
+
+[node name="Colisão111" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 408, 250 )
+
+[node name="Colisão112" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 438, 250 )
+
+[node name="Colisão113" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 438, 220 )
+
+[node name="Colisão114" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 438, 191 )
+
+[node name="Colisão115" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 438, 166 )
+
+[node name="Colisão116" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 424, 166 )
+
+[node name="Colisão117" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 408, 151 )
+
+[node name="Colisão80" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 175, 204 )
+
+[node name="Colisão81" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 156, 219 )
+
+[node name="Colisão82" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 140, 235 )
+
+[node name="Colisão83" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 140, 266 )
+
+[node name="Colisão84" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 114, 266 )
+
+[node name="Colisão85" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 89, 266 )
+
+[node name="Colisão86" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 72, 266 )
+
+[node name="Colisão87" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 72, 281 )
+
+[node name="Colisão88" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 105, 282 )
+
+[node name="Colisão89" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 130, 282 )
+
+[node name="Colisão90" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 161, 281 )
+
+[node name="Colisão91" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 191, 282 )
+
+[node name="Colisão92" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 199, 311 )
+
+[node name="Colisão93" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 199, 336 )
+
+[node name="Colisão94" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 199, 354 )
+
+[node name="Colisão66" parent="Colisão" instance=ExtResource( 6 )]
+position = Vector2( 248, -109 )
+
+[node name="doguinho" parent="." instance=ExtResource( 3 )]
+position = Vector2( 356, 160 )
+
+[node name="gatinho" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2, 282 )
+
+[node name="moeda" parent="." instance=ExtResource( 7 )]
+position = Vector2( 425, 38 )
+
+[node name="moeda2" parent="moeda" instance=ExtResource( 7 )]
+position = Vector2( -168, -8 )
+
+[node name="moeda3" parent="moeda" instance=ExtResource( 7 )]
+position = Vector2( -39, 90 )
+
+[node name="moeda4" parent="moeda" instance=ExtResource( 7 )]
+position = Vector2( -250, 394 )
+
+[node name="moeda5" parent="moeda" instance=ExtResource( 7 )]
+position = Vector2( -177, 294 )
+
+[node name="moeda6" parent="moeda" instance=ExtResource( 7 )]
+position = Vector2( -8, 285 )
+
+[node name="Terciário" type="TileMap" parent="."]
+z_index = -1
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 34, 0, 65539, 34, 0, 196610, 34, 0, 196613, 34, 0, 262154, 5, 0, 262160, 39, 0, 327680, 34, 0, 327685, 34, 0, 327690, 5, 0, 327692, 37, 0, 393219, 34, 0, 393226, 5, 0, 458762, 5, 0, 458768, 39, 0, 524298, 5, 0, 589834, 5, 0, 655363, 36, 0, 655370, 5, 0, 655384, 36, 0, 720906, 5, 0, 786435, 1, 0, 786436, 1, 0, 786437, 1, 0, 786438, 1, 0, 786439, 1, 0, 786443, 1, 0, 786444, 1, 0, 786445, 1, 0, 786446, 2, 0, 786449, 20, 0, 786450, 0, 0, 851975, 4, 0, 851976, 4, 0, 851977, 4, 0, 851978, 4, 0, 851979, 4, 0, 851982, 5, 0, 851985, 24, 0, 851986, 3, 0, 917518, 8, 0, 917521, 27, 0, 917522, 6, 0, 983057, 14, 0, 983062, 28, 0, 983063, 28, 0, 983064, 28, 0, 983065, 9, 0, 983066, 10, 0, 983067, 11, 0, 1048591, 33, 0, 1048593, 14, 0, 1048595, 36, 0, 1048597, 28, 0, 1048598, 28, 0, 1048599, 28, 0, 1048600, 28, 0, 1048601, 12, 0, 1048602, 13, 0, 1048603, 32, 0, 1048604, 10, 0, 1048605, 11, 0, 1114123, 9, 0, 1114124, 33, 0, 1114129, 14, 0, 1114133, 9, 0, 1114134, 10, 0, 1114135, 11, 0, 1114136, 28, 0, 1114137, 15, 0, 1114138, 29, 0, 1114139, 13, 0, 1114140, 13, 0, 1114141, 14, 0, 1179658, 9, 0, 1179659, 33, 0, 1179662, 31, 0, 1179663, 16, 0, 1179664, 16, 0, 1179665, 17, 0, 1179666, 37, 0, 1179669, 12, 0, 1179670, 13, 0, 1179671, 14, 0, 1179672, 28, 0, 1179673, 28, 0, 1179674, 15, 0, 1179675, 29, 0, 1179676, 13, 0, 1179677, 14, 0, 1245188, 37, 0, 1245193, 9, 0, 1245194, 33, 0, 1245198, 14, 0, 1245205, 12, 0, 1245206, 13, 0, 1245207, 32, 0, 1245208, 11, 0, 1245209, 28, 0, 1245210, 28, 0, 1245211, 12, 0, 1245212, 13, 0, 1245213, 14, 0, 1310728, 9, 0, 1310729, 33, 0, 1310732, 39, 0, 1310734, 14, 0, 1310741, 12, 0, 1310742, 13, 0, 1310743, 13, 0, 1310744, 32, 0, 1310745, 11, 0, 1310746, 28, 0, 1310747, 12, 0, 1310748, 13, 0, 1310749, 14, 0, 1376264, 12, 0, 1376266, 34, 0, 1376270, 14, 0, 1376277, 12, 0, 1376278, 13, 0, 1376279, 13, 0, 1376280, 13, 0, 1376281, 32, 0, 1376282, 10, 0, 1376283, 33, 0, 1376284, 13, 0, 1376285, 14, 0, 1441800, 33, 0, 1441806, 32, 0, 1441813, 33, 0, 1441814, 13, 0, 1441815, 13, 0, 1441816, 13, 0, 1441817, 13, 0, 1441818, 13, 0, 1441819, 13, 0, 1441820, 13, 0, 1441821, 14, 0, 1507334, 34, 0, 1507337, 34, 0, 1507345, 34, 0, 1507348, 13, 0, 1507349, 13, 0, 1507350, 13, 0, 1507351, 30, 0, 1507352, 16, 0, 1507353, 16, 0, 1507354, 16, 0, 1507355, 16, 0, 1507356, 16, 0, 1507357, 17, 0, 1572885, 30, 0, 1572886, 16, 0, 1572887, 17, 0, 1638412, 29, 0, 1638414, 30, 0, 1638418, 16, 0, 1638419, 16, 0, 1638421, 17, 0, 1638427, 37, 0 )
+
+[node name="Secundário" type="TileMap" parent="."]
+z_index = -2
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 65551, 18, 0, 65552, 19, 0, 65553, 20, 0, 65554, 0, 0, 65555, 1, 0, 65556, 1, 0, 65557, 1, 0, 65558, 1, 0, 65559, 1, 0, 65560, 1, 0, 65561, 1, 0, 65562, 2, 0, 65564, 36, 0, 131080, 0, 0, 131081, 43, 0, 131087, 22, 0, 131088, 21, 0, 131089, 24, 0, 131098, 5, 0, 196618, 40, 0, 196623, 25, 0, 196624, 26, 0, 196625, 27, 0, 196631, 41, 0, 196634, 42, 0, 196635, 2, 0, 262167, 6, 0, 262168, 41, 0, 262171, 5, 0, 327704, 3, 0, 393236, 36, 0, 393240, 3, 0, 458776, 6, 0, 458777, 41, 0, 524313, 3, 0, 589849, 3, 0, 655385, 3, 0, 720921, 3, 0, 786434, 0, 0, 786440, 43, 0, 786442, 42, 0, 786446, 2, 0, 786447, 18, 0, 786448, 19, 0, 786449, 20, 0, 786457, 43, 0, 786459, 42, 0, 851982, 5, 0, 851983, 22, 0, 851984, 21, 0, 851985, 24, 0, 917512, 40, 0, 917513, 7, 0, 917514, 7, 0, 917519, 25, 0, 917520, 26, 0, 917521, 27, 0, 983041, 0, 0, 983042, 43, 0, 983045, 40, 0, 983046, 7, 0, 983047, 7, 0, 983048, 8, 0, 1048580, 40, 0, 1048581, 8, 0, 1114112, 1, 0, 1114113, 43, 0, 1114115, 40, 0, 1114116, 8, 0, 1179651, 5, 0, 1245186, 40, 0, 1245187, 8, 0, 1245212, 39, 0, 1310720, 7, 0, 1310721, 7, 0, 1310722, 8, 0, 1376273, 36, 0, 1572866, 36, 0, 1703960, 36, 0, 1835012, 36, 0, 1835026, 36, 0 )
+
+[node name="Principal" type="TileMap" parent="."]
+z_index = -3
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 13, 0, 1, 13, 0, 2, 13, 0, 3, 13, 0, 4, 13, 0, 5, 13, 0, 6, 13, 0, 7, 14, 0, 8, 28, 0, 9, 28, 0, 10, 28, 0, 11, 28, 0, 12, 28, 0, 13, 28, 0, 14, 28, 0, 15, 12, 0, 16, 13, 0, 17, 14, 0, 18, 28, 0, 19, 28, 0, 20, 28, 0, 21, 28, 0, 22, 28, 0, 23, 28, 0, 24, 28, 0, 25, 28, 0, 26, 28, 0, 27, 28, 0, 28, 28, 0, 29, 28, 0, 65536, 13, 0, 65537, 13, 0, 65538, 13, 0, 65539, 13, 0, 65540, 13, 0, 65541, 13, 0, 65542, 13, 0, 65543, 14, 0, 65544, 28, 0, 65545, 0, 0, 65546, 1, 0, 65547, 1, 0, 65548, 1, 0, 65549, 1, 0, 65550, 2, 0, 65551, 12, 0, 65552, 13, 0, 65553, 14, 0, 65554, 0, 0, 65555, 28, 0, 65556, 28, 0, 65557, 28, 0, 65558, 28, 0, 65559, 28, 0, 65560, 28, 0, 65561, 28, 0, 65562, 28, 0, 65563, 28, 0, 65564, 28, 0, 65565, 28, 0, 131072, 13, 0, 131073, 13, 0, 131074, 13, 0, 131075, 13, 0, 131076, 13, 0, 131077, 13, 0, 131078, 13, 0, 131079, 14, 0, 131081, 3, 0, 131082, 4, 0, 131083, 4, 0, 131084, 4, 0, 131085, 4, 0, 131086, 5, 0, 131087, 12, 0, 131088, 13, 0, 131089, 28, 0, 131090, 3, 0, 131091, 4, 0, 131092, 4, 0, 131093, 4, 0, 131094, 4, 0, 131095, 4, 0, 131096, 4, 0, 131097, 4, 0, 131098, 28, 0, 131099, 28, 0, 131100, 28, 0, 131101, 28, 0, 196608, 13, 0, 196609, 13, 0, 196610, 13, 0, 196611, 13, 0, 196612, 13, 0, 196613, 13, 0, 196614, 13, 0, 196615, 14, 0, 196616, 3, 0, 196617, 4, 0, 196619, 7, 0, 196620, 7, 0, 196621, 7, 0, 196622, 8, 0, 196623, 12, 0, 196624, 13, 0, 196625, 14, 0, 196626, 6, 0, 196627, 7, 0, 196628, 7, 0, 196629, 7, 0, 196630, 7, 0, 196632, 4, 0, 196633, 4, 0, 196636, 28, 0, 196637, 28, 0, 262144, 13, 0, 262145, 13, 0, 262146, 13, 0, 262147, 13, 0, 262148, 13, 0, 262149, 13, 0, 262150, 13, 0, 262151, 14, 0, 262152, 3, 0, 262153, 4, 0, 262154, 28, 0, 262155, 28, 0, 262156, 28, 0, 262157, 28, 0, 262158, 28, 0, 262159, 12, 0, 262160, 13, 0, 262161, 14, 0, 262162, 28, 0, 262163, 28, 0, 262164, 28, 0, 262165, 28, 0, 262166, 28, 0, 262167, 28, 0, 262169, 4, 0, 262170, 4, 0, 262172, 28, 0, 262173, 28, 0, 327680, 13, 0, 327681, 13, 0, 327682, 13, 0, 327683, 13, 0, 327684, 13, 0, 327685, 13, 0, 327686, 13, 0, 327687, 14, 0, 327688, 3, 0, 327689, 4, 0, 327690, 28, 0, 327691, 28, 0, 327692, 28, 0, 327693, 28, 0, 327694, 28, 0, 327695, 12, 0, 327696, 13, 0, 327697, 14, 0, 327698, 28, 0, 327699, 28, 0, 327700, 28, 0, 327701, 28, 0, 327702, 28, 0, 327703, 28, 0, 327705, 4, 0, 327706, 4, 0, 327707, 5, 0, 327708, 28, 0, 327709, 28, 0, 393216, 13, 0, 393217, 13, 0, 393218, 13, 0, 393219, 13, 0, 393220, 13, 0, 393221, 13, 0, 393222, 13, 0, 393223, 14, 0, 393224, 3, 0, 393225, 4, 0, 393226, 28, 0, 393227, 28, 0, 393228, 28, 0, 393229, 28, 0, 393230, 28, 0, 393231, 12, 0, 393232, 13, 0, 393233, 14, 0, 393234, 28, 0, 393235, 28, 0, 393236, 28, 0, 393237, 28, 0, 393238, 28, 0, 393239, 28, 0, 393240, 28, 0, 393241, 4, 0, 393242, 4, 0, 393243, 5, 0, 393244, 28, 0, 393245, 28, 0, 458752, 13, 0, 458753, 13, 0, 458754, 13, 0, 458755, 13, 0, 458756, 13, 0, 458757, 13, 0, 458758, 13, 0, 458759, 14, 0, 458760, 3, 0, 458761, 4, 0, 458762, 28, 0, 458763, 28, 0, 458764, 28, 0, 458765, 28, 0, 458766, 28, 0, 458767, 12, 0, 458768, 13, 0, 458769, 14, 0, 458770, 28, 0, 458771, 28, 0, 458772, 28, 0, 458773, 28, 0, 458774, 28, 0, 458775, 28, 0, 458776, 28, 0, 458778, 4, 0, 458779, 5, 0, 458780, 28, 0, 458781, 28, 0, 524288, 16, 0, 524289, 16, 0, 524290, 16, 0, 524291, 16, 0, 524292, 16, 0, 524293, 16, 0, 524294, 16, 0, 524295, 17, 0, 524296, 3, 0, 524297, 4, 0, 524298, 28, 0, 524299, 28, 0, 524300, 28, 0, 524301, 28, 0, 524302, 28, 0, 524303, 12, 0, 524304, 13, 0, 524305, 14, 0, 524306, 28, 0, 524307, 28, 0, 524308, 28, 0, 524309, 28, 0, 524310, 28, 0, 524311, 28, 0, 524312, 28, 0, 524313, 28, 0, 524314, 4, 0, 524315, 5, 0, 524316, 28, 0, 524317, 28, 0, 589824, 28, 0, 589825, 28, 0, 589826, 28, 0, 589827, 28, 0, 589828, 28, 0, 589829, 28, 0, 589830, 28, 0, 589831, 28, 0, 589832, 3, 0, 589833, 4, 0, 589834, 28, 0, 589835, 28, 0, 589836, 28, 0, 589837, 28, 0, 589838, 28, 0, 589839, 12, 0, 589840, 13, 0, 589841, 14, 0, 589842, 28, 0, 589843, 28, 0, 589844, 28, 0, 589845, 28, 0, 589846, 28, 0, 589847, 28, 0, 589848, 28, 0, 589849, 28, 0, 589850, 4, 0, 589851, 5, 0, 589852, 28, 0, 589853, 28, 0, 655360, 28, 0, 655361, 28, 0, 655362, 28, 0, 655363, 28, 0, 655364, 28, 0, 655365, 28, 0, 655366, 28, 0, 655367, 28, 0, 655368, 3, 0, 655369, 4, 0, 655370, 28, 0, 655371, 28, 0, 655372, 28, 0, 655373, 28, 0, 655374, 28, 0, 655375, 12, 0, 655376, 13, 0, 655377, 14, 0, 655378, 28, 0, 655379, 28, 0, 655380, 28, 0, 655381, 28, 0, 655382, 28, 0, 655383, 28, 0, 655384, 28, 0, 655385, 28, 0, 655386, 4, 0, 655387, 5, 0, 655388, 28, 0, 655389, 28, 0, 720896, 28, 0, 720897, 28, 0, 720898, 28, 0, 720899, 28, 0, 720900, 28, 0, 720901, 28, 0, 720902, 28, 0, 720903, 28, 0, 720904, 3, 0, 720905, 4, 0, 720906, 28, 0, 720907, 28, 0, 720908, 28, 0, 720909, 28, 0, 720910, 28, 0, 720911, 12, 0, 720912, 13, 0, 720913, 14, 0, 720914, 28, 0, 720915, 28, 0, 720916, 28, 0, 720917, 28, 0, 720918, 28, 0, 720919, 28, 0, 720920, 28, 0, 720921, 28, 0, 720922, 4, 0, 720923, 5, 0, 720924, 28, 0, 720925, 28, 0, 786432, 28, 0, 786433, 28, 0, 786434, 28, 0, 786435, 28, 0, 786436, 28, 0, 786437, 28, 0, 786438, 28, 0, 786439, 28, 0, 786440, 3, 0, 786441, 4, 0, 786442, 28, 0, 786443, 28, 0, 786444, 28, 0, 786445, 28, 0, 786446, 5, 0, 786447, 12, 0, 786448, 13, 0, 786449, 14, 0, 786450, 1, 0, 786451, 1, 0, 786452, 1, 0, 786453, 1, 0, 786454, 1, 0, 786455, 1, 0, 786456, 1, 0, 786458, 4, 0, 786460, 1, 0, 786461, 1, 0, 851968, 28, 0, 851969, 28, 0, 851970, 3, 0, 851971, 4, 0, 851972, 4, 0, 851973, 4, 0, 851974, 4, 0, 851975, 4, 0, 851976, 4, 0, 851977, 4, 0, 851978, 4, 0, 851979, 4, 0, 851980, 4, 0, 851981, 4, 0, 851982, 5, 0, 851983, 12, 0, 851984, 13, 0, 851985, 14, 0, 851986, 4, 0, 851987, 4, 0, 851988, 4, 0, 851989, 4, 0, 851990, 4, 0, 851991, 4, 0, 851992, 4, 0, 851993, 4, 0, 851994, 4, 0, 851995, 4, 0, 851996, 4, 0, 851997, 4, 0, 917504, 28, 0, 917505, 28, 0, 917506, 3, 0, 917507, 4, 0, 917508, 4, 0, 917509, 4, 0, 917510, 4, 0, 917511, 4, 0, 917512, 28, 0, 917513, 28, 0, 917514, 28, 0, 917515, 7, 0, 917516, 7, 0, 917517, 7, 0, 917518, 7, 0, 917519, 12, 0, 917520, 13, 0, 917521, 14, 0, 917522, 7, 0, 917523, 7, 0, 917524, 7, 0, 917525, 7, 0, 917526, 7, 0, 917527, 7, 0, 917528, 7, 0, 917529, 7, 0, 917530, 7, 0, 917531, 7, 0, 917532, 7, 0, 917533, 7, 0, 983040, 28, 0, 983041, 28, 0, 983042, 3, 0, 983043, 4, 0, 983044, 4, 0, 983045, 28, 0, 983046, 28, 0, 983047, 28, 0, 983048, 28, 0, 983049, 28, 0, 983050, 28, 0, 983051, 28, 0, 983052, 28, 0, 983053, 28, 0, 983054, 28, 0, 983055, 12, 0, 983056, 13, 0, 983057, 14, 0, 983058, 28, 0, 983059, 28, 0, 983060, 28, 0, 983061, 28, 0, 983062, 28, 0, 983063, 28, 0, 983064, 28, 0, 983065, 28, 0, 983066, 28, 0, 983067, 28, 0, 983068, 28, 0, 983069, 28, 0, 1048576, 28, 0, 1048577, 3, 0, 1048578, 4, 0, 1048579, 4, 0, 1048580, 28, 0, 1048581, 28, 0, 1048582, 28, 0, 1048583, 28, 0, 1048584, 28, 0, 1048585, 28, 0, 1048586, 28, 0, 1048587, 28, 0, 1048588, 9, 0, 1048589, 10, 0, 1048590, 10, 0, 1048591, 28, 0, 1048592, 13, 0, 1048593, 28, 0, 1048594, 28, 0, 1048595, 28, 0, 1048596, 28, 0, 1048597, 28, 0, 1048598, 28, 0, 1048599, 28, 0, 1048600, 28, 0, 1048601, 28, 0, 1048602, 28, 0, 1048603, 28, 0, 1048604, 28, 0, 1048605, 28, 0, 1114112, 28, 0, 1114113, 3, 0, 1114114, 4, 0, 1114115, 28, 0, 1114116, 28, 0, 1114117, 28, 0, 1114118, 28, 0, 1114119, 28, 0, 1114120, 28, 0, 1114121, 28, 0, 1114122, 28, 0, 1114123, 28, 0, 1114124, 12, 0, 1114125, 13, 0, 1114126, 13, 0, 1114127, 13, 0, 1114128, 13, 0, 1114129, 28, 0, 1114130, 28, 0, 1114131, 28, 0, 1114132, 28, 0, 1114133, 28, 0, 1114134, 28, 0, 1114135, 28, 0, 1114136, 13, 0, 1114137, 28, 0, 1114138, 28, 0, 1114139, 28, 0, 1114140, 28, 0, 1114141, 28, 0, 1179648, 4, 0, 1179649, 4, 0, 1179650, 4, 0, 1179651, 28, 0, 1179652, 28, 0, 1179653, 28, 0, 1179654, 28, 0, 1179655, 28, 0, 1179656, 28, 0, 1179657, 28, 0, 1179658, 28, 0, 1179659, 13, 0, 1179660, 13, 0, 1179661, 13, 0, 1179662, 28, 0, 1179663, 28, 0, 1179664, 28, 0, 1179665, 28, 0, 1179666, 28, 0, 1179667, 28, 0, 1179668, 28, 0, 1179669, 28, 0, 1179670, 28, 0, 1179671, 28, 0, 1179672, 13, 0, 1179673, 13, 0, 1179674, 28, 0, 1179675, 28, 0, 1179676, 28, 0, 1179677, 28, 0, 1245184, 4, 0, 1245185, 4, 0, 1245186, 28, 0, 1245187, 28, 0, 1245188, 28, 0, 1245189, 28, 0, 1245190, 28, 0, 1245191, 28, 0, 1245192, 28, 0, 1245193, 28, 0, 1245194, 13, 0, 1245195, 13, 0, 1245196, 13, 0, 1245197, 13, 0, 1245198, 28, 0, 1245199, 28, 0, 1245200, 28, 0, 1245201, 28, 0, 1245202, 28, 0, 1245203, 28, 0, 1245204, 28, 0, 1245205, 28, 0, 1245206, 28, 0, 1245207, 28, 0, 1245208, 28, 0, 1245209, 13, 0, 1245210, 13, 0, 1245211, 28, 0, 1245212, 28, 0, 1245213, 28, 0, 1310720, 28, 0, 1310721, 28, 0, 1310722, 28, 0, 1310723, 28, 0, 1310724, 28, 0, 1310725, 28, 0, 1310726, 28, 0, 1310727, 28, 0, 1310728, 28, 0, 1310729, 13, 0, 1310730, 13, 0, 1310731, 13, 0, 1310732, 13, 0, 1310733, 13, 0, 1310734, 28, 0, 1310735, 28, 0, 1310736, 28, 0, 1310737, 28, 0, 1310738, 28, 0, 1310739, 28, 0, 1310740, 28, 0, 1310741, 28, 0, 1310742, 28, 0, 1310743, 28, 0, 1310744, 28, 0, 1310745, 28, 0, 1310746, 13, 0, 1310747, 28, 0, 1310748, 28, 0, 1310749, 28, 0, 1376256, 28, 0, 1376257, 28, 0, 1376258, 28, 0, 1376259, 28, 0, 1376260, 28, 0, 1376261, 28, 0, 1376262, 28, 0, 1376263, 28, 0, 1376264, 13, 0, 1376265, 13, 0, 1376266, 13, 0, 1376267, 13, 0, 1376268, 13, 0, 1376269, 13, 0, 1376270, 28, 0, 1376271, 28, 0, 1376272, 28, 0, 1376273, 28, 0, 1376274, 28, 0, 1376275, 28, 0, 1376276, 28, 0, 1376277, 28, 0, 1376278, 28, 0, 1376279, 28, 0, 1376280, 28, 0, 1376281, 28, 0, 1376282, 28, 0, 1376283, 28, 0, 1376284, 28, 0, 1376285, 28, 0, 1441792, 28, 0, 1441793, 28, 0, 1441794, 28, 0, 1441795, 28, 0, 1441796, 9, 0, 1441797, 10, 0, 1441798, 10, 0, 1441799, 10, 0, 1441800, 13, 0, 1441801, 13, 0, 1441802, 13, 0, 1441803, 13, 0, 1441804, 13, 0, 1441805, 13, 0, 1441806, 10, 0, 1441807, 10, 0, 1441808, 10, 0, 1441809, 10, 0, 1441810, 10, 0, 1441811, 10, 0, 1441812, 10, 0, 1441813, 11, 0, 1441814, 28, 0, 1441815, 28, 0, 1441816, 28, 0, 1441817, 28, 0, 1441818, 28, 0, 1441819, 28, 0, 1441820, 28, 0, 1441821, 28, 0, 1507328, 28, 0, 1507329, 28, 0, 1507330, 28, 0, 1507331, 28, 0, 1507332, 12, 0, 1507333, 13, 0, 1507334, 13, 0, 1507335, 13, 0, 1507336, 13, 0, 1507337, 13, 0, 1507338, 13, 0, 1507339, 13, 0, 1507340, 13, 0, 1507341, 13, 0, 1507342, 13, 0, 1507343, 13, 0, 1507344, 13, 0, 1507345, 13, 0, 1507346, 13, 0, 1507347, 13, 0, 1507348, 13, 0, 1507349, 14, 0, 1507350, 28, 0, 1507351, 28, 0, 1507352, 28, 0, 1507353, 28, 0, 1507354, 28, 0, 1507355, 28, 0, 1507356, 28, 0, 1507357, 28, 0, 1572864, 28, 0, 1572865, 28, 0, 1572866, 28, 0, 1572867, 28, 0, 1572868, 12, 0, 1572869, 13, 0, 1572870, 13, 0, 1572871, 13, 0, 1572872, 13, 0, 1572873, 13, 0, 1572874, 13, 0, 1572875, 13, 0, 1572876, 13, 0, 1572877, 13, 0, 1572878, 13, 0, 1572879, 13, 0, 1572880, 13, 0, 1572881, 13, 0, 1572882, 13, 0, 1572883, 13, 0, 1572884, 13, 0, 1572885, 14, 0, 1572886, 28, 0, 1572887, 28, 0, 1572888, 28, 0, 1572889, 28, 0, 1572890, 28, 0, 1572891, 28, 0, 1572892, 28, 0, 1572893, 28, 0, 1638400, 28, 0, 1638401, 28, 0, 1638402, 28, 0, 1638403, 28, 0, 1638404, 15, 0, 1638405, 16, 0, 1638406, 16, 0, 1638407, 16, 0, 1638408, 16, 0, 1638409, 16, 0, 1638410, 16, 0, 1638411, 16, 0, 1638412, 16, 0, 1638413, 13, 0, 1638414, 16, 0, 1638415, 16, 0, 1638416, 16, 0, 1638417, 16, 0, 1638418, 28, 0, 1638419, 28, 0, 1638420, 16, 0, 1638421, 17, 0, 1638422, 28, 0, 1638423, 28, 0, 1638424, 28, 0, 1638425, 28, 0, 1638426, 28, 0, 1638427, 28, 0, 1638428, 28, 0, 1638429, 28, 0, 1703936, 28, 0, 1703937, 28, 0, 1703938, 28, 0, 1703939, 28, 0, 1703940, 28, 0, 1703941, 28, 0, 1703942, 28, 0, 1703943, 28, 0, 1703944, 28, 0, 1703945, 28, 0, 1703946, 28, 0, 1703947, 28, 0, 1703948, 12, 0, 1703949, 13, 0, 1703950, 14, 0, 1703951, 28, 0, 1703952, 28, 0, 1703953, 28, 0, 1703954, 28, 0, 1703955, 28, 0, 1703956, 28, 0, 1703957, 28, 0, 1703958, 28, 0, 1703959, 28, 0, 1703960, 28, 0, 1703961, 28, 0, 1703962, 28, 0, 1703963, 28, 0, 1703964, 28, 0, 1703965, 28, 0, 1769472, 28, 0, 1769473, 28, 0, 1769474, 28, 0, 1769475, 28, 0, 1769476, 28, 0, 1769477, 28, 0, 1769478, 28, 0, 1769479, 28, 0, 1769480, 28, 0, 1769481, 28, 0, 1769482, 28, 0, 1769483, 28, 0, 1769484, 12, 0, 1769485, 13, 0, 1769486, 14, 0, 1769487, 28, 0, 1769488, 28, 0, 1769489, 28, 0, 1769490, 28, 0, 1769491, 28, 0, 1769492, 28, 0, 1769493, 28, 0, 1769494, 28, 0, 1769495, 28, 0, 1769496, 28, 0, 1769497, 28, 0, 1769498, 28, 0, 1769499, 28, 0, 1769500, 28, 0, 1769501, 28, 0, 1835008, 28, 0, 1835009, 28, 0, 1835010, 28, 0, 1835011, 28, 0, 1835012, 28, 0, 1835013, 28, 0, 1835014, 28, 0, 1835015, 28, 0, 1835016, 28, 0, 1835017, 28, 0, 1835018, 28, 0, 1835019, 28, 0, 1835020, 12, 0, 1835021, 13, 0, 1835022, 14, 0, 1835023, 28, 0, 1835024, 28, 0, 1835025, 28, 0, 1835026, 28, 0, 1835027, 28, 0, 1835028, 28, 0, 1835029, 28, 0, 1835030, 28, 0, 1835031, 28, 0, 1835032, 28, 0, 1835033, 28, 0, 1835034, 28, 0, 1835035, 28, 0, 1835036, 28, 0, 1835037, 28, 0, 1900544, 28, 0, 1900545, 28, 0, 1900546, 28, 0, 1900547, 28, 0, 1900548, 28, 0, 1900549, 28, 0, 1900550, 28, 0, 1900551, 28, 0, 1900552, 28, 0, 1900553, 28, 0, 1900554, 28, 0, 1900555, 28, 0, 1900556, 12, 0, 1900557, 13, 0, 1900558, 14, 0, 1900559, 28, 0, 1900560, 28, 0, 1900561, 28, 0, 1900562, 28, 0, 1900563, 28, 0, 1900564, 28, 0, 1900565, 28, 0, 1900566, 28, 0, 1900567, 28, 0, 1900568, 28, 0, 1900569, 28, 0, 1900570, 28, 0, 1900571, 28, 0, 1900572, 28, 0, 1900573, 28, 0 )

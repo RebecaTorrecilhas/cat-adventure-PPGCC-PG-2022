@@ -1,0 +1,174 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://gatinho.gd" type="Script" id=1]
+[ext_resource path="res://Player/spritesheet_player.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 13.0
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("gatinho/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "idledown"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("gatinho/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.04 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "idleleft"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("gatinho/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.02 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 4 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "idleright"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("gatinho/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( -0.05 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 7 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "idleup"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("gatinho/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( -0.15 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 10 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "walkdown"
+tracks/0/type = "value"
+tracks/0/path = NodePath("gatinho/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( -0.00999997, 0.28, 0.55 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "walkleft"
+tracks/0/type = "value"
+tracks/0/path = NodePath("gatinho/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.01, 0.29, 0.57 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "walkright"
+tracks/0/type = "value"
+tracks/0/path = NodePath("gatinho/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( -0.01, 0.29, 0.57 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 7, 8 ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "walkup"
+tracks/0/type = "value"
+tracks/0/path = NodePath("gatinho/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 1.49012e-08, 0.28, 0.56 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11 ]
+}
+
+[node name="gatinho" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 16, 20 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 1 )
+texture = ExtResource( 2 )
+centered = false
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="anim" type="AnimationPlayer" parent="."]
+root_node = NodePath("../..")
+reset_on_save = false
+anims/RESET = SubResource( 2 )
+anims/idledown = SubResource( 3 )
+anims/idleleft = SubResource( 4 )
+anims/idleright = SubResource( 5 )
+anims/idleup = SubResource( 6 )
+anims/walkdown = SubResource( 7 )
+anims/walkleft = SubResource( 8 )
+anims/walkright = SubResource( 9 )
+anims/walkup = SubResource( 10 )
