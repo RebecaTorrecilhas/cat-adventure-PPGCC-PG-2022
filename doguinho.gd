@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const SPEED = 200
+const SPEED = 150
 var movedirection = Vector2(0,0)
 var spritedirection = "down"
 
@@ -13,11 +13,13 @@ func _physics_process(_delta):
 	else:
 		animswitch("idle")
 
+
+
 func controls():
-		var LEFT = Input.is_action_pressed("ui_left")
-		var RIGHT = Input.is_action_pressed("ui_right")
-		var UP = Input.is_action_pressed("ui_up")
-		var DOWN = Input.is_action_pressed("ui_down")
+		var LEFT = randi()%10+1
+		var RIGHT = randi()%10+1
+		var UP = randi()%10+1
+		var DOWN = randi()%10+1
 		movedirection.x = -int(LEFT) + int(RIGHT)
 		movedirection.y = -int(UP) + int(DOWN)
 

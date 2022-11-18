@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://gatinho.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mapa/tilegeral.tres" type="TileSet" id=2]
@@ -7,6 +7,9 @@
 [ext_resource path="res://Mapa/tilegeraldecoracores.tres" type="TileSet" id=5]
 [ext_resource path="res://Colisão mapa.tscn" type="PackedScene" id=6]
 [ext_resource path="res://moeda.tscn" type="PackedScene" id=7]
+[ext_resource path="res://fogueira.tscn" type="PackedScene" id=8]
+[ext_resource path="res://buraco.tscn" type="PackedScene" id=9]
+[ext_resource path="res://arbusto.tscn" type="PackedScene" id=10]
 
 [node name="teste nivel" type="Node2D"]
 
@@ -362,7 +365,10 @@ position = Vector2( 199, 354 )
 position = Vector2( 248, -109 )
 
 [node name="doguinho" parent="." instance=ExtResource( 3 )]
-position = Vector2( 356, 160 )
+position = Vector2( 326, 86 )
+
+[node name="doguinho2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 298, 283 )
 
 [node name="gatinho" parent="." instance=ExtResource( 1 )]
 position = Vector2( 2, 282 )
@@ -384,6 +390,51 @@ position = Vector2( -177, 294 )
 
 [node name="moeda6" parent="moeda" instance=ExtResource( 7 )]
 position = Vector2( -8, 285 )
+
+[node name="fogueira" parent="." instance=ExtResource( 8 )]
+position = Vector2( 28, 168 )
+
+[node name="fogueira2" parent="fogueira" instance=ExtResource( 8 )]
+position = Vector2( 99, 102 )
+
+[node name="fogueira3" parent="fogueira" instance=ExtResource( 8 )]
+position = Vector2( 293, 0 )
+
+[node name="fogueira4" parent="fogueira" instance=ExtResource( 8 )]
+position = Vector2( 0, 296 )
+
+[node name="fogueira5" parent="fogueira" instance=ExtResource( 8 )]
+position = Vector2( 344, -103 )
+
+[node name="arbusto" parent="." instance=ExtResource( 10 )]
+position = Vector2( 100, 173 )
+
+[node name="arbusto" parent="arbusto" instance=ExtResource( 10 )]
+position = Vector2( -40, 261 )
+
+[node name="arbusto2" parent="arbusto" instance=ExtResource( 10 )]
+position = Vector2( 105, -52 )
+
+[node name="arbusto3" parent="arbusto" instance=ExtResource( 10 )]
+position = Vector2( 227, 272 )
+
+[node name="arbusto4" parent="arbusto" instance=ExtResource( 10 )]
+position = Vector2( 251, 74 )
+
+[node name="arbusto5" parent="arbusto" instance=ExtResource( 10 )]
+position = Vector2( 348, -77 )
+
+[node name="buraco" parent="." instance=ExtResource( 9 )]
+position = Vector2( 449, 238 )
+
+[node name="buraco" parent="buraco" instance=ExtResource( 9 )]
+position = Vector2( -443, 147 )
+
+[node name="buraco2" parent="buraco" instance=ExtResource( 9 )]
+position = Vector2( -439, -26 )
+
+[node name="buraco3" parent="buraco" instance=ExtResource( 9 )]
+position = Vector2( -218, -208 )
 
 [node name="Terciário" type="TileMap" parent="."]
 z_index = -1
