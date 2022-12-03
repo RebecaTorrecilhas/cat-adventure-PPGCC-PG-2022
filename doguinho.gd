@@ -42,3 +42,9 @@ func animswitch(Animation):
 	var newanim = str(Animation, spritedirection)
 	if $anim.current_animation != newanim:
 		$anim.play(newanim)
+
+
+
+
+func _on_Area2D_body_entered(area):
+	print('aaaa')

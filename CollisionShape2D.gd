@@ -1,23 +1,19 @@
-extends KinematicBody2D
+extends CollisionShape2D
 
-var vida = 10
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
+
 const SPEED = 200
 var movedirection = Vector2(0,0)
 var spritedirection = "down"
-onready var ray_wall = $raycasts/RayCast2D
 
 func _physics_process(_delta):
-	$Label.text = str(vida)
-	if ray_wall.is_colliding():
-		self.position=Vector2(5,5)
-		vida=vida-1;
 	controls()
 	movement()
 	spritedirection_loop()
-	if movedirection != Vector2(0,0):
-		animswitch("walk")
-	else:
-		animswitch("idle")
+	
 
 func controls():
 		var LEFT = Input.is_action_pressed("ui_left")
@@ -29,7 +25,7 @@ func controls():
 
 func movement():
 	var motion = movedirection.normalized() * SPEED
-	move_and_slide(motion, Vector2(0,0))
+
 
 func spritedirection_loop():
 	match movedirection:
@@ -41,8 +37,11 @@ func spritedirection_loop():
 			spritedirection = "up"
 		Vector2(0,1):
 			spritedirection = "down"
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
 
-func animswitch(Animation):
-	var newanim = str(Animation, spritedirection)
-	if $anim.current_animation != newanim:
-		$anim.play(newanim)
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass

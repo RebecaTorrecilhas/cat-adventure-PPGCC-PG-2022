@@ -3,8 +3,7 @@
 [ext_resource path="res://doguinho/dog.png" type="Texture" id=1]
 [ext_resource path="res://doguinho.gd" type="Script" id=2]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8.5, 10.5 )
+[sub_resource type="CircleShape2D" id=11]
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -150,7 +149,7 @@ script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 17, 19 )
-shape = SubResource( 1 )
+shape = SubResource( 11 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

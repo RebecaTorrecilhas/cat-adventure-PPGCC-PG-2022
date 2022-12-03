@@ -8,9 +8,7 @@
 [ext_resource path="res://Moedas/coin_05.png" type="Texture" id=6]
 [ext_resource path="res://Moedas/coin_06.png" type="Texture" id=7]
 [ext_resource path="res://Moedas/coin_01.png" type="Texture" id=8]
-
-[sub_resource type="CircleShape2D" id=1]
-radius = 9.05539
+[ext_resource path="res://moeda.gd" type="Script" id=9]
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
@@ -21,14 +19,18 @@ animations = [ {
 } ]
 
 [node name="moeda" type="KinematicBody2D"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 8, 8 )
-shape = SubResource( 1 )
+script = ExtResource( 9 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 8, 8 )
-scale = Vector2( 0.322222, 0.3125 )
+position = Vector2( 8, 6.75 )
+scale = Vector2( 0.322222, 0.260417 )
 frames = SubResource( 4 )
-frame = 3
+frame = 5
 playing = true
+
+[node name="raycasts" type="Node2D" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="raycasts"]
+position = Vector2( 8, 0 )
+enabled = true
+cast_to = Vector2( 0, 14 )
